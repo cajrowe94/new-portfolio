@@ -63,8 +63,28 @@ nav ul li a:hover{
 	height: 100vh;
 	width: 100%;
 	margin: 0;
-	background-image: url(../img/IMG_1937.JPG);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.40)), url(../img/IMG_1937.JPG);
     background-position:center;
 	background-size: cover;
 	background-attachment: fixed;
 }
+.section-about .about-me {
+	width: 85%;
+	margin: 0 auto;
+}
+.section-about .about-me .me-desc{
+	width: 85%;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,13 +1,20 @@
 /********MAIN SETTINGS********/
 html {
 	font-size: 20px;
-	font-family: 'Antic Slab', serif;
+	font-family: 'Dosis', sans-serif;
 }
 canvas {
 	position:absolute;
 	top:0;
 	left:0;
 	z-index:-1;
+	opacity: .7;
+}
+body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.40)), url(../img/IMG_1407.JPG);
+	background-position:center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 /*****************************/
 /********NAVIGATION***********/
@@ -26,16 +33,17 @@ nav .main-nav {
 }
 nav ul li {margin: 0px 40px;}
 nav ul li a{
+	text-transform: uppercase;
 	text-decoration: none;
 	color: #000;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	border-bottom: 2px solid transparent;
 	transition: border .2s, padding .2s, text-shadow .2s;
 }
 nav ul li a:hover{
 	padding-bottom: 1px;
 	border-bottom: 2px solid #7b7b7b;
-	text-shadow: 0px 25px 3px #6a6a6a;
+	text-shadow: 0px 3px 3px #6a6a6a;
 }
 /*****************************/
 /*********HOME PAGE***********/
@@ -45,10 +53,12 @@ nav ul li a:hover{
 	width: 30%;
 	padding: 5px;
 	top: 35%;
-	left: 10%;
+	left: 6%;
 }
 .section-home h1{
-	font-size: 275%;
+	font-family: 'Rock Salt', cursive;
+	color: #8e8e8e;
+	font-size: 300%;
 	margin-bottom: 10px;
 	font-weight: 100;	
 }
@@ -56,26 +66,70 @@ nav ul li a:hover{
 	font-size: 120%;
 	margin: 5px 0px 0px 5px;
 }
+
 /********ABOUT ME********/
+
 .section-about {
 	position: absolute;
 	top: 100vh;
 	height: 100vh;
 	width: 100%;
 	margin: 0;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.40)), url(../img/IMG_1937.JPG);
-    background-position:center;
-	background-size: cover;
-	background-attachment: fixed;
 }
-.section-about .about-me {
-	width: 85%;
-	margin: 0 auto;
+.about-me-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+	margin: 30px auto 0px auto;
+	
 }
-.section-about .about-me .me-desc{
-	width: 85%;
-	margin: 0 auto;
+.about-me-heading h2{
+	font-family: 'Rock Salt', cursive;
+	font-size: 230%;
+	width: 100%;
+	margin: 0;
+	color: #8e8e8e;
+	border-radius: 4px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0px 2px 20px black;
+	background-color: rgba(0, 0, 0, 0.82);
 }
+.about-me-heading .social-media-links {
+	flex: 1;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0px 2px 20px black;
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.72);
+	list-style-type: none;
+}
+.social-media-links li ion-icon {
+	margin: 10px;
+	color: #8e8e8e;
+	transition: color .3s;
+}
+.social-media-links li ion-icon[name='logo-linkedin']:hover{color: #007bb5;}
+.social-media-links li ion-icon[name='logo-github']:hover{color: #c9510c;}
+.social-media-links li ion-icon[name='logo-youtube']:hover{color: #ff0000;}
+
+.about-me-body {
+	background-color: rgba(0, 0, 0, 0.62);
+	height: 300px;
+	margin: 0;
+	padding: 0;
+}
+.about-me-body p{
+	color: #8e8e8e;
+	font-size: 150%;
+	font-weight: 100;
+	margin: 0;
+	padding: 20px;
+}
+
+
+
 
 
 

@@ -10,7 +10,7 @@ var zoff = 0;
 var flowField = [];
 
 var spd = 5;
-let zVal = .001;
+let zVal = .0001;
 
 var rand;
 
@@ -30,11 +30,7 @@ function setup() {
 
 function draw() {
 	background(255,.5);
-	
-	//create a new circle when particle arr is empty
-	if (particles.length === 0){
-		//makeCircle(width/2, height/2, getRandomInt(20, 400));
-	}
+
 	var yoff = 0;
 	for (var x = 0; x < cols; x++){
 		var xoff = 0;
